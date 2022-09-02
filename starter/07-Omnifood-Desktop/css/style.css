@@ -7,9 +7,10 @@
     justify-content: space-between; /*Katrs uz savu pusi*/
     align-items: center;
     background-color: #fdf2e9;
+    position: relative;
 
 
-    /*Because we want it to be sticky latter*/
+    /*Because we want it to be sticky later*/
     height: 9.6rem;
     padding: 0 4.8rem;
 }
@@ -25,7 +26,7 @@
 .main-nav-list {
     list-style: none;
     display: flex;
-    gap: 3.2rem;
+    gap: 4.8rem;
     align-items: center;
 }
 
@@ -53,6 +54,22 @@
     background-color: #cf711f;
 }
 
+/*MOBILE NAV*/
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
 
 /*********************/
 /* HERO SECTION*/
@@ -64,13 +81,13 @@
 }
 
 .hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 9.6rem;
     align-items: center;
-    width: 130rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
 }
 
 
@@ -559,7 +576,7 @@
 }
 
 .grid-footer {
-    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr  ;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .logo-col {
